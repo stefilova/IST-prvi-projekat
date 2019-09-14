@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Adresar>
+    <Osoba id="150">
+    <PunoIme>
+        <Ime>Stefan</Ime>
+        <SrednjeIme>Radislav</SrednjeIme>
+        <Prezime>Budimirovic</Prezime>
+    </PunoIme>
+    <DatumRodjenja>
+        <Dan>28</Dan>
+        <Mesec>Januar</Mesec>
+        <Godina>1995</Godina>
+    </DatumRodjenja>
+    <Adresa tip="privremena">
+        <Ulica>Francuska</Ulica>
+        <Broj>32A</Broj>
+        <Grad>Beograd</Grad>
+        <Drzava>Srbija</Drzava>
+    </Adresa>
+    <Telefon tip="mobilni">0611891695</Telefon>
+    <Email tip="sluzbeni">sb@sajtic.rs</Email>
+    </Osoba>
+    <Kompanija id="komp15-11">
+        <Naziv>PrvaKompanija</Naziv>
+        <Adresa tip="stalna">
+            <Ulica>Francuska</Ulica>
+            <Broj>32A</Broj>
+            <Grad>Beograd</Grad>
+            <Drzava>Srbija</Drzava>
+        </Adresa>
+        <Telefon tip="fiksni">011/222-567</Telefon>
+        <Email tip="sluzbeni">sales@company.rs</Email>
+    </Kompanija>
+</Adresar>
