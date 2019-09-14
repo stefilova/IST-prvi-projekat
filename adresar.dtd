@@ -15,3 +15,10 @@
 <!ELEMENT Drzava (#PCDATA)>
 <!ELEMENT Telefon (#PCDATA)>
 <!ELEMENT Email (#PCDATA)>
+<!ELEMENT Kompanija (Naziv, Adresa, Telefon, Email+)>
+<!ELEMENT Naziv (#PCDATA)>
+<!ATTLIST Osoba id ID #REQUIRED>
+<!ATTLIST Kompanija id ID #REQUIRED>
+<!ATTLIST Adresa tip (privremena|stalna) "privremena">
+<!ATTLIST Telefon tip (mobilni|fiksni) #REQUIRED>
+<!ATTLIST Email tip (privatni|sluzbeni) #REQUIRED>
