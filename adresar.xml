@@ -21,6 +21,49 @@
     <Telefon tip="mobilni">0611891695</Telefon>
     <Email tip="sluzbeni">sb@sajtic.rs</Email>
     </Osoba>
+    <Osoba id="151">
+    <PunoIme>
+        <Ime>Pera</Ime>
+        <SrednjeIme>Miroslav</SrednjeIme>
+        <Prezime>Peric</Prezime>
+    </PunoIme>
+    <DatumRodjenja>
+        <Dan>15</Dan>
+        <Mesec>Februar</Mesec>
+        <Godina>1971</Godina>
+    </DatumRodjenja>
+    <Adresa tip="stalna">
+        <Ulica>Cvetina Brkica</Ulica>
+        <Broj>11</Broj>
+        <Grad>Glusci</Grad>
+        <Drzava>Srbija</Drzava>
+    </Adresa>
+    <Telefon tip="fiksni">015/448-358</Telefon>
+    <Email tip="privatni">pera71@gmail.com</Email>
+    <Email tip="sluzbeni">pera.peric71@gmail.com</Email>
+    </Osoba>
+    <Osoba id="152">
+    <PunoIme>
+        <Ime>Kristina</Ime>
+        <SrednjeIme>Dejan</SrednjeIme>
+        <Prezime>Vasic</Prezime>
+    </PunoIme>
+    <DatumRodjenja>
+        <Dan>23</Dan>
+        <Mesec>Mart</Mesec>
+        <Godina>2001</Godina>
+    </DatumRodjenja>
+    <Adresa tip="stalna">
+        <Ulica>Cara Dusana</Ulica>
+        <Broj>65</Broj>
+        <Grad>Beograd</Grad>
+        <Drzava>Srbija</Drzava>
+    </Adresa>
+    <Telefon tip="mobilni">064/55-56-354</Telefon>
+    <Email tip="privatni">kristina01@gmail.com</Email>
+    <Email tip="privatni">kristina.vasic@gmail.com</Email>
+    <Email tip="privatni">kv@gmail.com</Email>
+    </Osoba>
     <Kompanija id="komp15-11">
         <Naziv>PrvaKompanija</Naziv>
         <Adresa tip="stalna">
@@ -31,5 +74,29 @@
         </Adresa>
         <Telefon tip="fiksni">011/222-567</Telefon>
         <Email tip="sluzbeni">sales@company.rs</Email>
+    </Kompanija>
+     <Kompanija id="komp16-12">
+        <Naziv>DrugaKompanija</Naziv>
+        <Adresa tip="stalna">
+            <Ulica>Solunska</Ulica>
+            <Broj>17</Broj>
+            <Grad>Beograd</Grad>
+            <Drzava>Srbija</Drzava>
+        </Adresa>
+        <Telefon tip="mobilni">061/67-89-142</Telefon>
+        <Email tip="sluzbeni">support@company.rs</Email>
+    </Kompanija>
+    <Kompanija id="komp17-13">
+        <Naziv>TrecaKompanija</Naziv>
+        <Adresa tip="stalna">
+            <Ulica>Svetogorska</Ulica>
+            <Broj>6</Broj>
+            <Grad>Beograd</Grad>
+            <Drzava>Srbija</Drzava>
+        </Adresa>
+        <Telefon tip="fiksni">011/678-123</Telefon>
+        <Email tip="sluzbeni">support@company.rs</Email>
+        <Email tip="sluzbeni">sales@company.rs</Email>
+        <Email tip="sluzbeni">hr@company.rs</Email>
     </Kompanija>
 </Adresar>
