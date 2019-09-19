@@ -38,6 +38,36 @@
                                     </xs:sequnce>
                                 </xs:complexType>
                             </xs:element>
+                            <xs:element name="DatumRodjenja">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Dan">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="1"/>
+                                                    <xs:maxInclusive value="31"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Mesec">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:maxInclusive value="1"/>
+                                                    <xs:maxInclusive value="12"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Godina">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:pattern value="([0-9]{4})"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
