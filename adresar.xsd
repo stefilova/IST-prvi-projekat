@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://tempuri.org/XMLSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:complexType name="Adresa">
+    <xs:simpleContent>
+        <xs:extension base="xs:string" />
+    </xs:simpleContent>
+</xs:complexType>
+<xs:simpleType name="Telefon">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="(0[0-9]{2}/[0-9]{3}-[0-9]{3})"/>
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="Email">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="(.{1,20}@[a-z]{4,8}[.]com)"/>
+    </xs:restriction>
+</xs:simpleType>
+<xs:element name="Adresar">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="Osoba" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="PunoIme">
+                                <xs:complexType>
+                                    <xs:sequnce>
+                                        <xs:element name="Ime">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:minLength value="3"/>
+                                                    <xs:maxLength value="30"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="SrednjeIme" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xs:element name="Prezime" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                                    </xs:sequnce>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="DatumRodjenja">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Dan">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="1"/>
+                                                    <xs:maxInclusive value="31"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Mesec">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:maxInclusive value="1"/>
+                                                    <xs:maxInclusive value="12"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Godina">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:pattern value="([0-9]{4})"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Adresa">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Ulica" type="Adresa"/>
+                                        <xs:element name="Broj"  type="Adresa"/>
+                                        <xs:element name="Grad"  type="Adresa"/>
+                                        <xs:element name="Drzava" type="Adresa" minOccurs="0" maxOccurs="1"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="tip" type="xs:string" use="optional" default="privremena"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Telefon">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="Telefon">
+                                        <xs:attribute name="tip" type="xs:string" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Email" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="Email">
+                                            <xs:attribute name="tip" type="xs:string" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Kompanija" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Naziv" type="xs:string"/>
+                            <xs:element name="Adresa">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Ulica" type="Adresa"/>
+                                        <xs:element name="Broj"  type="Adresa"/>
+                                        <xs:element name="Grad"  type="Adresa"/>
+                                        <xs:element name="Drzava" type="Adresa" minOccurs="0" maxOccurs="1"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="tip" type="xs:string" use="optional" default="privremena"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Telefon">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="Telefon">
+                                            <xs:attribute name="tip" type="xs:string" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Email" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="Email">
+                                            <xs:attribute name="tip" type="xs:string" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+             </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:shema>
