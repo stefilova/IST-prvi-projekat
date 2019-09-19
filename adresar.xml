@@ -14,7 +14,7 @@
     </DatumRodjenja>
     <Adresa tip="privremena">
         <Ulica>Francuska</Ulica>
-        <Broj>32A</Broj>
+        <Broj>32</Broj>
         <Grad>Beograd</Grad>
         <Drzava>Srbija</Drzava>
     </Adresa>
