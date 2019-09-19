@@ -67,8 +67,74 @@
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            
+                            <xs:element name="Adresa">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Ulica" type="Adresa"/>
+                                        <xs:element name="Broj"  type="Adresa"/>
+                                        <xs:element name="Grad"  type="Adresa"/>
+                                        <xs:element name="Drzava" type="Adresa" minOccurs="0" maxOccurs="1"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="tip" type="xs:string" use="optional" default="privremena"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Telefon">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="Telefon">
+                                        <xs:attribute name="tip" type="xs:string" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Email" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="Email">
+                                            <xs:attribute name="tip" type="xs:string" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
                         </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Kompanija" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Naziv" type="xs:string"/>
+                            <xs:element name="Adresa">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Ulica" type="Adresa"/>
+                                        <xs:element name="Broj"  type="Adresa"/>
+                                        <xs:element name="Grad"  type="Adresa"/>
+                                        <xs:element name="Drzava" type="Adresa" minOccurs="0" maxOccurs="1"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="tip" type="xs:string" use="optional" default="privremena"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Telefon">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="Telefon">
+                                            <xs:attribute name="tip" type="xs:string" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Email" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="Email">
+                                            <xs:attribute name="tip" type="xs:string" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required"/>
                     </xs:complexType>
                 </xs:element>
              </xs:choice>
