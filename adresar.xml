@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE note SYSTEM "adresar.dtd">
+<!DOCTYPE Adresar SYSTEM "adresar.dtd">
 <Adresar>
-    <Osoba id="150">
+    <Osoba id="Hds">
     <PunoIme>
         <Ime>Stefan</Ime>
         <SrednjeIme>Radislav</SrednjeIme>
@@ -21,7 +21,7 @@
     <Telefon tip="mobilni">0611891695</Telefon>
     <Email tip="sluzbeni">sb@sajtic.rs</Email>
     </Osoba>
-    <Osoba id="151">
+    <Osoba id="MrhXC">
     <PunoIme>
         <Ime>Pera</Ime>
         <SrednjeIme>Miroslav</SrednjeIme>
@@ -42,7 +42,7 @@
     <Email tip="privatni">pera71@gmail.com</Email>
     <Email tip="sluzbeni">pera.peric71@gmail.com</Email>
     </Osoba>
-    <Osoba id="152">
+    <Osoba id="xERcq">
     <PunoIme>
         <Ime>Kristina</Ime>
         <SrednjeIme>Dejan</SrednjeIme>
