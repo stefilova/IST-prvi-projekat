@@ -51,6 +51,37 @@
                 <td>
                 <xsl:value-of select="PunoIme/Prezime"/>
                 </td>
+                <td>
+                <xsl:value-of select="DatumRodjenja/Dan"/>
+                </td>
+                <td>
+                <xsl:value-of select="DatumRodjenja/Mesec"/>
+                </td>
+                <td>
+                <xsl:value-of select="DatumRodjenja/Godina"/>
+                </td>
+                <td>
+                <xsl:value-of select="Adresa/Ulica"/>
+                </td>
+                <td>
+                <xsl:value-of select="Adresa/Broj"/>
+                </td>
+                <td>
+                <xsl:value-of select="Adresa/Grad"/>
+                </td>
+                <td>
+                <xsl:value-of select="Adresa/Drzava"/>
+                </td>
+                <td colspan="2">
+                <xsl:value-of select="Telefon"/>
+                </td>
+                <td colspan="2">
+                <xsl:for-each select="Email">
+                
+                <xsl:value-of select="."/>
+                <br/>
+                </xsl:for-each>
+                </td>
             </tr>
             </xsl:if>
         </xsl:template>
