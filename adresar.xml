@@ -66,7 +66,7 @@
     <Email tip="privatni">kristina.vasic@gmail.com</Email>
     <Email tip="privatni">kv@gmail.com</Email>
     </Osoba>
-    <Kompanija id="komp15-11">
+    <Kompanija id="kTcS">
         <Naziv>PrvaKompanija</Naziv>
         <Adresa tip="stalna">
             <Ulica>Francuska</Ulica>
@@ -77,7 +77,7 @@
         <Telefon tip="fiksni">011/222-567</Telefon>
         <Email tip="sluzbeni">sales@company.rs</Email>
     </Kompanija>
-     <Kompanija id="komp16-12">
+     <Kompanija id="sGHsD">
         <Naziv>DrugaKompanija</Naziv>
         <Adresa tip="stalna">
             <Ulica>Solunska</Ulica>
@@ -88,7 +88,7 @@
         <Telefon tip="mobilni">061/67-89-142</Telefon>
         <Email tip="sluzbeni">support@company.rs</Email>
     </Kompanija>
-    <Kompanija id="komp17-13">
+    <Kompanija id="sDDGDGDG">
         <Naziv>TrecaKompanija</Naziv>
         <Adresa tip="stalna">
             <Ulica>Svetogorska</Ulica>
