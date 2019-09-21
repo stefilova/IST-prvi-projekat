@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Adresar SYSTEM "adresar.dtd">
-<?xml-stylesheet type="text/xsl" href="xslt1.xslt"?>
+<!--<?xml-stylesheet type="text/xsl" href="xslt1.xslt"?>-->
+<?xml-stylesheet type="text/xsl" href="drugixslt.xslt"?>
 <Adresar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="adresar.xsd">
     <Osoba id="Hds">
@@ -48,7 +49,7 @@
     <PunoIme>
         <Ime>Kristina</Ime>
         <SrednjeIme>Dejan</SrednjeIme>
-        <Prezime>Vasic</Prezime>
+        <Prezime>Maric</Prezime>
     </PunoIme>
     <DatumRodjenja>
         <Dan>23</Dan>
@@ -63,8 +64,8 @@
     </Adresa>
     <Telefon tip="mobilni">064/55-56-354</Telefon>
     <Email tip="privatni">kristina01@gmail.com</Email>
-    <Email tip="privatni">kristina.vasic@gmail.com</Email>
-    <Email tip="privatni">kv@gmail.com</Email>
+    <Email tip="privatni">kristina.maric@gmail.com</Email>
+    <Email tip="privatni">km@gmail.com</Email>
     </Osoba>
     <Kompanija id="kTcS">
         <Naziv>PrvaKompanija</Naziv>
