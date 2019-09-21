@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Adresar SYSTEM "adresar.dtd">
 <!--<?xml-stylesheet type="text/xsl" href="xslt1.xslt"?>-->
-<?xml-stylesheet type="text/xsl" href="drugixslt.xslt"?>
+<?xml-stylesheet type="text/xsl" href="konvert.xslt"?>
 <Adresar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="adresar.xsd">
     <Osoba id="Hds">
